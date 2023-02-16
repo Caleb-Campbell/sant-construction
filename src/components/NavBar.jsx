@@ -9,7 +9,7 @@ export default function NavBar() {
         <Nav.Item className="text-light"> Logo {/* logo here */}</Nav.Item>
         <Stack gap={3} direction="horizontal">
           <Nav.Item>
-            <NavLink className="text-light text-decoration-none" to="/home">
+            <NavLink className="text-light text-decoration-none" to="/">
               Home
             </NavLink>
           </Nav.Item>
