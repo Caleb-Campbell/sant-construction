@@ -8,6 +8,7 @@ import Services from "./components/pages/Services";
 import About from "./components/pages/About";
 import NavBar from "./components/NavBar";
 import Contact from "./components/pages/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Stack>
-      ;
+      <Footer />
     </>
   );
 }

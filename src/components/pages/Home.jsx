@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel, Stack, Image, Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import "../../app.css";
 
 export default function Home() {
@@ -53,6 +54,34 @@ export default function Home() {
             <Button>Learn About Us</Button>
           </Stack>
         </div>
+        <Stack className="bg-light" direction="horizontal">
+          <div className="p-5">
+            <h2>Government Construction</h2>
+            <p>
+              As part of our Mentor-Protégé partnership with Washington River
+              Protection Solutions (WRPS), we support the U.S. Department of
+              Energy (DOE) in the substantial undertaking of hazardous waste
+              clean-up and environmental remediation in and around the Hanford
+              area.
+            </p>
+            <NavLink>{"<"} Learn more about government construction </NavLink>
+          </div>
+          <img src="https://picsum.photos/500/500" />
+        </Stack>
+        <Stack className="bg-light m-0" direction="horizontal">
+          <img src="https://picsum.photos/500/500" />
+          <div className="p-5">
+            <h2>Government Construction</h2>
+            <p>
+              As part of our Mentor-Protégé partnership with Washington River
+              Protection Solutions (WRPS), we support the U.S. Department of
+              Energy (DOE) in the substantial undertaking of hazardous waste
+              clean-up and environmental remediation in and around the Hanford
+              area.
+            </p>
+            <NavLink>Learn more about government construction {">"}</NavLink>
+          </div>
+        </Stack>
       </Stack>
     </>
   );
