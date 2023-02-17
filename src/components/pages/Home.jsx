@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Stack className="bg-dark" style={{ width: "100vw" }}>
-        <Carousel style={{ width: "100vw" }}>
+        <Carousel className="mb-0" style={{ width: "100vw" }}>
           <Carousel.Item>
             <img src="https://picsum.photos/2000/1000" />
           </Carousel.Item>
@@ -27,8 +27,9 @@ export default function Home() {
             <img src="https://picsum.photos/2000/1000" />
           </Carousel.Item>
         </Carousel>
+        <h1 className="title text-light text-center">Sant Construction</h1>
         <Button
-          style={{ position: "relative", top: "-100px", margin: "0px" }}
+          style={{ position: "relative", top: "-500px", margin: "0px" }}
           className="w-25 mx-auto"
         >
           Take a look at our stuff
