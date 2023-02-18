@@ -9,22 +9,40 @@ export default function Home() {
       <Stack className="bg-dark" style={{ width: "100vw" }}>
         <Carousel className="mb-0" style={{ width: "100vw" }}>
           <Carousel.Item>
-            <img src="https://picsum.photos/2000/1000" />
+            <img
+              style={{ width: "100%" }}
+              src="https://picsum.photos/3840/2160"
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://picsum.photos/2000/1000" />
+            <img
+              style={{ width: "100%" }}
+              src="https://picsum.photos/3840/2160"
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://picsum.photos/2000/1000" />
+            <img
+              style={{ width: "100%" }}
+              src="https://picsum.photos/3840/2160"
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://picsum.photos/2000/1000" />
+            <img
+              style={{ width: "100%" }}
+              src="https://picsum.photos/3840/2160"
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://picsum.photos/2000/1000" />
+            <img
+              style={{ width: "100%" }}
+              src="https://picsum.photos/3840/2160"
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://picsum.photos/2000/1000" />
+            <img
+              style={{ width: "100%" }}
+              src="https://picsum.photos/3840/2160"
+            />
           </Carousel.Item>
         </Carousel>
         <h1 className="title text-light text-center">Sant Construction</h1>
