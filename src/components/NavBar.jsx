@@ -1,16 +1,15 @@
 import React from "react";
 import { Nav, Stack } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import simple from "/simple.svg";
 
 export default function NavBar() {
   return (
     <>
-      <Nav className="justify-content-between p-3 bg-dark">
-        <Nav.Item className="">
-          <img src={simple} alt="Sant Construction Logo" />
+      <Nav className="justify-content-around p-3 bg-dark">
+        <Nav.Item>
+          <h2>Logo</h2>
         </Nav.Item>
-        <Stack gap={3} direction="horizontal">
+        <Stack gap={5} direction="horizontal">
           <Nav.Item>
             <NavLink className="text-light text-decoration-none" to="/">
               Home

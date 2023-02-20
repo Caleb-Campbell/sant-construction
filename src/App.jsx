@@ -9,10 +9,12 @@ import About from "./components/pages/About";
 import NavBar from "./components/NavBar";
 import Contact from "./components/pages/Contact";
 import Footer from "./components/Footer";
+import Opener from "./components/Opener";
 
 function App() {
   return (
     <>
+      <Opener />
       <Stack>
         <NavBar />
         <Routes>
