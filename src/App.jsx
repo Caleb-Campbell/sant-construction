@@ -14,7 +14,6 @@ import Opener from "./components/Opener";
 function App() {
   return (
     <>
-      <Opener />
       <Stack>
         <NavBar />
         <Routes>
@@ -28,6 +27,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Stack>
+      <Opener />
       <Footer />
     </>
   );
