@@ -1,8 +1,8 @@
 import React from "react";
-import { Nav, Stack } from "react-bootstrap";
+import { Nav, Stack, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-export default function NavBar() {
+export default function NavBar({ toggle }) {
   return (
     <>
       <Nav className="justify-content-around p-3 bg-dark">
@@ -37,6 +37,9 @@ export default function NavBar() {
             <NavLink className="text-light text-decoration-none" to="/contact">
               Contact
             </NavLink>
+          </Nav.Item>
+          <Nav.Item>
+            <Button onClick={toggle}>Free Bid</Button>
           </Nav.Item>
         </Stack>
       </Nav>
