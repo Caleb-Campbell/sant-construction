@@ -1,13 +1,14 @@
 import React from "react";
 import { Nav, Stack, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import svg from "../assets/simple.svg";
 
 export default function NavBar({ toggle }) {
   return (
     <>
       <Nav className="justify-content-around p-3 bg-dark">
         <Nav.Item>
-          <h2>Logo</h2>
+          <img src={svg} />
         </Nav.Item>
         <Stack gap={5} direction="horizontal">
           <Nav.Item>

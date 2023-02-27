@@ -5,6 +5,7 @@ import {
   FormLabel,
   Modal,
   Stack,
+  Button,
 } from "react-bootstrap";
 import React from "react";
 
@@ -14,12 +15,12 @@ export default function BidModal({ show, setShow }) {
 
   return (
     <>
-      <Modal onHide={handleClose} show={show}>
+      <Modal className="mt-5" onHide={handleClose} show={show}>
         <Modal.Header>
-          <Modal.Title>Request a Free Bid</Modal.Title>
+          <Modal.Title className="p-3">Request a Free Bid</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
+          <Form className="p-3">
             <Stack gap={4}>
               <FormLabel>
                 {" "}
@@ -49,7 +50,12 @@ export default function BidModal({ show, setShow }) {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <ButtonGroup></ButtonGroup>
+          <ButtonGroup>
+            <Button>Get a Bid</Button>
+            <Button variant="outline-secondary" onClick={handleClose}>
+              Close
+            </Button>
+          </ButtonGroup>
         </Modal.Footer>
       </Modal>
     </>
