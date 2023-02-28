@@ -5,7 +5,7 @@ import "../../../src/aboutCSS.css";
 export default function About() {
   return (
     <>
-      <Stack className="bg-light mt-5 mb-5" direction="horizontal">
+      <Stack className="about-border  mt-5 mb-5" direction="horizontal">
         <img src="https://picsum.photos/500/500" />
         <div className="p-5">
           <h2>Government Construction</h2>
@@ -101,7 +101,7 @@ export default function About() {
         </p>
       </div>
       {/* //////////////////////////////////LEADERSHIP INFO////////////////////////////////// */}
-      <Stack className="bg-light mt-5 mb-5" direction="horizontal">
+      <Stack className="mt-5 mb-5 about-border" direction="horizontal">
         <img src="https://picsum.photos/350/350" className="leaderImg"/>
         <div className="p-5">
           <h2>Leadership</h2>
