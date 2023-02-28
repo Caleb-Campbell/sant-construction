@@ -8,15 +8,17 @@ export default function About() {
       <Stack className="about-border  mt-5 mb-5" direction="horizontal">
         <img src="https://picsum.photos/500/500" />
         <div className="p-5">
-          <h2>Government Construction</h2>
+          <h2><strong>Sant Contruction</strong></h2>
           <p>
-            As part of our Mentor-Protégé partnership with Washington River
-            Protection Solutions (WRPS), we support the U.S. Department of
-            Energy (DOE) in the substantial undertaking of hazardous waste
-            clean-up and environmental remediation in and around the Hanford
-            area.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
           </p>
-          <NavLink>Learn more about government construction {">"}</NavLink>
+          <NavLink>Learn more about this {">"}</NavLink>
         </div>
       </Stack>
 
@@ -103,7 +105,7 @@ export default function About() {
       {/* //////////////////////////////////LEADERSHIP INFO////////////////////////////////// */}
       <Stack className="mt-5 mb-5 about-border" direction="horizontal">
         <img src="https://picsum.photos/350/350" className="leaderImg"/>
-        <div className="p-5">
+        <div className="p-5 leadership">
           <h2>Leadership</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
