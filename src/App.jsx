@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Stack } from "react-bootstrap";
 import { Routes, Route } from "react-router-dom";
 
@@ -10,12 +10,20 @@ import NavBar from "./components/NavBar";
 import Contact from "./components/pages/Contact";
 import Footer from "./components/Footer";
 import Opener from "./components/Opener";
+import BidModal from "./components/BidModal";
 
 function App() {
+  const [openModal, setOpenModal] = useState(true);
+
+  const toggleModal = () => {
+    setOpenModal(!openModal);
+  };
+
   return (
     <>
       <Stack>
-        <NavBar />
+        <NavBar toggle={toggleModal} />
+        <BidModal show={openModal} setShow={setOpenModal} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
@@ -27,7 +35,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Stack>
-      <Opener />
+      {/* <Opener /> */}
       <Footer />
     </>
   );
