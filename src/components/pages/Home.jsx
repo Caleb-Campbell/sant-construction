@@ -45,13 +45,13 @@ export default function Home() {
             />
           </Carousel.Item>
         </Carousel>
-        <h1 className="title text-light text-center">Sant Construction</h1>
+        {/* <h1 className="title text-light text-center">Sant Construction</h1>
         <Button
           style={{ position: "relative", top: "-500px", margin: "0px" }}
           className="w-25 mx-auto"
         >
           Take a look at our stuff
-        </Button>
+        </Button> */}
         <div
           className="background"
           style={{ display: "flex", alignItems: "center" }}
@@ -85,10 +85,10 @@ export default function Home() {
             </p>
             <NavLink>{"<"} Learn more about government construction </NavLink>
           </div>
-          <img src="https://picsum.photos/500/500" />
+          {/* <img src="https://picsum.photos/500/500" /> */}
         </Stack>
         <Stack className="bg-light m-0" direction="horizontal">
-          <img src="https://picsum.photos/500/500" />
+          {/* <img src="https://picsum.photos/500/500" /> */}
           <div className="p-5">
             <h2>Government Construction</h2>
             <p>
