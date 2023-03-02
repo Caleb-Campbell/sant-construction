@@ -1,45 +1,56 @@
 import React from "react";
-import { Nav, Stack, Button } from "react-bootstrap";
+import {
+  Nav,
+  Navbar,
+  Stack,
+  Button,
+  NavDropdown,
+  Container,
+  Row,
+  Col,
+} from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import svg from "../assets/simple.svg";
 
-export default function NavBar({ toggle }) {
+export default function TopNav({ toggle }) {
   return (
     <>
-      <Nav className="justify-content-around align-items-center p-3 bg-dark">
-        <Nav.Item>{/* <img src={svg} /> */}</Nav.Item>
-        <Nav.Item>
-          <NavLink className="text-light text-decoration-none" to="/">
-            Home
-          </NavLink>
-        </Nav.Item>
-        <Nav.Item>
-          <NavLink className="text-light text-decoration-none" to="/services">
-            Services
-          </NavLink>
-        </Nav.Item>
-        <Nav.Item>
-          <NavLink
-            className="text-light text-decoration-none"
-            to="/custom-homes-and-shops"
-          >
-            Customize your Build
-          </NavLink>
-        </Nav.Item>
-        <Nav.Item>
-          <NavLink className="text-light text-decoration-none" to="/about">
-            About
-          </NavLink>
-        </Nav.Item>
-        <Nav.Item>
-          <NavLink className="text-light text-decoration-none" to="/contact">
-            Contact
-          </NavLink>
-        </Nav.Item>
-        <Nav.Item>
-          <Button onClick={toggle}>Free Bid</Button>
-        </Nav.Item>
-      </Nav>
+      <Navbar className="p-0 w-100" bg="dark" variant="dark" expand="lg">
+        <Container>
+          <Col>
+            <Navbar.Brand href="#home">
+              <img className="logo" src={svg} />
+              Sant Construction
+            </Navbar.Brand>
+          </Col>
+          <Col>
+            <Navbar.Toggle className="w-10" aria-controls="basic-navbar-nav" />
+          </Col>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="justify-content-between me-auto">
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#link">About</Nav.Link>
+              <NavDropdown title="Services" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">
+                  Something
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">
+                  Separated link
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Button onClick={toggle} className="float-right">
+                Get a Bid
+              </Button>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </>
   );
+  // );
 }

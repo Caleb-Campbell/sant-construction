@@ -63,20 +63,22 @@ export default function Home() {
           className="background"
           style={{ display: "flex", alignItems: "center" }}
         > */}
-        <Container fluid className="bg-light p-3 text-center mt-3">
-          <Col>
-            <p>About Us</p>
-            <h2>Passion + Purpose</h2>
-            <p className="responsive">
-              {" "}
-              We put our clients, team members, and communities at the center of
-              all we do. Our “whys” drive our passion, purpose, and growth. We
-              want to make the world cleaner, safer, and a better place to live.
-              We strive to create opportunities, inspire and lift the
-              underserved, and ultimately, create lasting legacies.{" "}
-            </p>
-            <Button>Learn About Us</Button>
-          </Col>
+        <Container fluid className="p-3 text-center mt-3">
+          <div className="p-4">
+            <Col className="bg-light p-3">
+              <p>About Us</p>
+              <h2>Passion + Purpose</h2>
+              <p className="responsive">
+                {" "}
+                We put our clients, team members, and communities at the center
+                of all we do. Our “whys” drive our passion, purpose, and growth.
+                We want to make the world cleaner, safer, and a better place to
+                live. We strive to create opportunities, inspire and lift the
+                underserved, and ultimately, create lasting legacies.{" "}
+              </p>
+              <Button>Learn About Us</Button>
+            </Col>
+          </div>
         </Container>
         {/* </div> */}
         <Container className="bg-light mt-3 p-3" direction="horizontal">

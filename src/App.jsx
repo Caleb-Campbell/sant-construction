@@ -6,14 +6,14 @@ import CustomHomesAndShops from "./components/CustomHomesAndShops";
 import Home from "./components/pages/Home";
 import Services from "./components/pages/Services";
 import About from "./components/pages/About";
-import NavBar from "./components/NavBar";
+import TopNav from "./components/NavBar";
 import Contact from "./components/pages/Contact";
 import Footer from "./components/Footer";
 import Opener from "./components/Opener";
 import BidModal from "./components/BidModal";
 
 function App() {
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
 
   const toggleModal = () => {
     setOpenModal(!openModal);
@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <Stack>
-        <NavBar toggle={toggleModal} />
+        <TopNav toggle={toggleModal} />
         <BidModal show={openModal} setShow={setOpenModal} />
         <Routes>
           <Route path="/" element={<Home />} />
