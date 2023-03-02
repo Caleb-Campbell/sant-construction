@@ -17,3 +17,10 @@
     width: 100vw;
     height: 100vh;
 }
+
+@media (min-width: 427px) {
+    .responsive {
+        padding: 3em;
+        font-size: 1.5em;
+    }
+}

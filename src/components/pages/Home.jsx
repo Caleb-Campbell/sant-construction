@@ -1,5 +1,12 @@
 import React from "react";
-import { Carousel, Stack, Image, Button } from "react-bootstrap";
+import {
+  Carousel,
+  Stack,
+  Image,
+  Button,
+  Container,
+  Col,
+} from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "../../app.css";
 
@@ -52,17 +59,15 @@ export default function Home() {
         >
           Take a look at our stuff
         </Button> */}
-        <div
+        {/* <div
           className="background"
           style={{ display: "flex", alignItems: "center" }}
-        >
-          <Stack
-            gap={3}
-            className="mx-5 align-items-center bg-light h-50 my-auto p-5"
-          >
+        > */}
+        <Container fluid className="bg-light p-3 text-center mt-3">
+          <Col>
             <p>About Us</p>
             <h2>Passion + Purpose</h2>
-            <p className="w-50 text-center">
+            <p className="responsive">
               {" "}
               We put our clients, team members, and communities at the center of
               all we do. Our “whys” drive our passion, purpose, and growth. We
@@ -71,9 +76,10 @@ export default function Home() {
               underserved, and ultimately, create lasting legacies.{" "}
             </p>
             <Button>Learn About Us</Button>
-          </Stack>
-        </div>
-        <Stack className="bg-light" direction="horizontal">
+          </Col>
+        </Container>
+        {/* </div> */}
+        <Container className="bg-light mt-3 p-3" direction="horizontal">
           <div className="p-5">
             <h2>Government Construction</h2>
             <p>
@@ -86,8 +92,8 @@ export default function Home() {
             <NavLink>{"<"} Learn more about government construction </NavLink>
           </div>
           {/* <img src="https://picsum.photos/500/500" /> */}
-        </Stack>
-        <Stack className="bg-light m-0" direction="horizontal">
+        </Container>
+        <Container className="bg-light mt-3 p-3" direction="horizontal">
           {/* <img src="https://picsum.photos/500/500" /> */}
           <div className="p-5">
             <h2>Government Construction</h2>
@@ -100,7 +106,7 @@ export default function Home() {
             </p>
             <NavLink>Learn more about government construction {">"}</NavLink>
           </div>
-        </Stack>
+        </Container>
       </Stack>
     </>
   );
