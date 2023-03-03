@@ -17,3 +17,25 @@
     width: 100vw;
     height: 100vh;
 }
+
+.logo {
+    width: 3em;
+
+}
+
+@media (min-width: 427px) {
+    .responsive {
+        /* font-size: 1.5em; */
+    }
+}
+
+@media (max-width: 425px) {
+    .logo {
+        width: 2.5em;
+    }
+    .home-image {
+        width: 100%;
+    }
+}
+
+ /* css color presets */

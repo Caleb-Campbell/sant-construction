@@ -6,9 +6,9 @@ export default function Footer() {
   return (
     <>
       <Stack gap={4} className="bg-dark p-5">
-        <h2 className="text-light">Sant Construction LLC</h2>
-        <Container fluid="xs" className="text-center">
-          <Row>
+        <h2 className="text-light text-center">Sant Construction LLC</h2>
+        <Container fluid="xs" className=" text-center w-100">
+          <Row className="justify-content-md-center">
             <Col md="auto">
               <NavLink className="text-light text-center">Home</NavLink>
             </Col>
@@ -28,7 +28,7 @@ export default function Footer() {
             </Col>
           </Row>
         </Container>
-        <Container>
+        <Container className="text-center">
           <Row>
             <Col>
               <a>
