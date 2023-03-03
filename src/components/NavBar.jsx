@@ -33,13 +33,46 @@ export default function TopNav({ toggle }) {
           </Col>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="justify-content-between ">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/services">Services</Nav.Link>
-              <Nav.Link href="/custom-homes-and-shops">
-                Customize Your Build
+              <Nav.Link>
+                <NavLink className="text-light text-decoration-none" to="/">
+                  Home
+                </NavLink>
               </Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/contact">Contact</Nav.Link>
+              <Nav.Link>
+                {" "}
+                <NavLink
+                  className="text-light text-decoration-none"
+                  to="/services"
+                >
+                  Services
+                </NavLink>
+              </Nav.Link>
+              <Nav.Link>
+                <NavLink
+                  className="text-light text-decoration-none"
+                  to="/custom-homes-and-shops"
+                >
+                  Customize your Build
+                </NavLink>
+              </Nav.Link>
+              <Nav.Link>
+                {" "}
+                <NavLink
+                  className="text-light text-decoration-none"
+                  to="/about"
+                >
+                  About
+                </NavLink>
+              </Nav.Link>
+              <Nav.Link>
+                {" "}
+                <NavLink
+                  className="text-light text-decoration-none"
+                  to="/contact"
+                >
+                  Contact
+                </NavLink>
+              </Nav.Link>
 
               <Button onClick={toggle} className="float-right">
                 Get a Bid
