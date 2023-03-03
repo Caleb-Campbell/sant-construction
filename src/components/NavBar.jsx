@@ -19,7 +19,7 @@ export default function TopNav({ toggle }) {
         <Container>
           <Col>
             <Navbar.Brand href="#home">
-              <img className="logo" src={svg} />
+              <img className="logo " src={svg} style={{ scale: "1.5" }} />
               Sant Construction
             </Navbar.Brand>
           </Col>
@@ -27,22 +27,15 @@ export default function TopNav({ toggle }) {
             <Navbar.Toggle className="w-10" aria-controls="basic-navbar-nav" />
           </Col>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="justify-content-between me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">About</Nav.Link>
-              <NavDropdown title="Services" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
+            <Nav className="justify-content-between ">
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/services">Services</Nav.Link>
+              <Nav.Link href="/custom-homes-and-shops">
+                Customize Your Build
+              </Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="/contact">Contact</Nav.Link>
+
               <Button onClick={toggle} className="float-right">
                 Get a Bid
               </Button>
