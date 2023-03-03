@@ -64,8 +64,8 @@ export default function Home() {
           style={{ display: "flex", alignItems: "center" }}
         > */}
         <Container fluid className="p-3 text-center mt-3">
-          <div className="p-4">
-            <Col className="bg-light p-3">
+          <Col className="bg-light p-3">
+            <div className="m-1 p-3">
               <p>About Us</p>
               <h2>Passion + Purpose</h2>
               <p className="responsive">
@@ -77,8 +77,8 @@ export default function Home() {
                 underserved, and ultimately, create lasting legacies.{" "}
               </p>
               <Button>Learn About Us</Button>
-            </Col>
-          </div>
+            </div>
+          </Col>
         </Container>
         {/* </div> */}
         <Container className="bg-light mt-3 p-3" direction="horizontal">

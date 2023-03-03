@@ -15,7 +15,7 @@ import svg from "../assets/simple.svg";
 export default function TopNav({ toggle }) {
   return (
     <>
-      <Navbar className="p-0 w-100" bg="dark" variant="dark" expand="lg">
+      <Navbar className=" w-100" bg="dark" variant="dark" expand="lg">
         <Container>
           <Col>
             <Navbar.Brand href="#home">
