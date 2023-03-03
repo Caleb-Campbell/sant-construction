@@ -15,12 +15,17 @@ import svg from "../assets/simple.svg";
 export default function TopNav({ toggle }) {
   return (
     <>
-      <Navbar className=" w-100" bg="dark" variant="dark" expand="lg">
+      <Navbar
+        className=" w-100 justify-content-between"
+        bg="dark"
+        variant="dark"
+        expand="lg"
+      >
         <Container>
-          <Col>
+          <Col className="justify-content-between">
             <Navbar.Brand href="#home">
-              <img className="logo " src={svg} style={{ scale: "1.5" }} />
-              Sant Construction
+              <img className="logo " src={svg} style={{ scale: "1.2" }} />
+              <span className="fs-5">Sant Construction</span>
             </Navbar.Brand>
           </Col>
           <Col>
