@@ -108,7 +108,10 @@ export default function About() {
         className="mt-5 mb-5 about-border text-center"
         direction="horizontal"
       >
-        <img src="https://picsum.photos/350/350" className="leaderImg" />
+        <img
+          src="https://picsum.photos/350/350"
+          className="leaderImg text-center"
+        />
         <div className="p-5 leadership">
           <h2>6A Leadership</h2>
           <p>
