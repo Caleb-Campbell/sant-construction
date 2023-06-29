@@ -1,6 +1,6 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 import Button from './buttons';
-import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +18,11 @@ const Navbar: React.FC = () => {
               <h1 className="text-white">Logo</h1>
             </div>
             <div className="hidden md:block">
-              <div className="flex items-baseline space-x-4">
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+              <div className="ml-10 flex items-baseline space-x-4">
+                <Link href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</Link>
+                <Link href="/About" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</Link>
+                <Link href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</Link>
+                <Link href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
               </div>
             </div>
           </div>
@@ -53,8 +53,8 @@ const Navbar: React.FC = () => {
           <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
         </div>
         <Button>
-            <Link href="/quote">Get a Quote</Link>
-          </Button>
+          <Link href="/quote">Get a Quote</Link>
+        </Button>
       </div>
     </nav>
   );
