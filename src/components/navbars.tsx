@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Button from './buttons';
+import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +18,7 @@ const Navbar: React.FC = () => {
               <h1 className="text-white">Logo</h1>
             </div>
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
+              <div className="flex items-baseline space-x-4">
                 <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
                 <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
                 <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
@@ -24,6 +26,9 @@ const Navbar: React.FC = () => {
               </div>
             </div>
           </div>
+          <Button>
+            <Link href="/quote">Get a Quote</Link>
+          </Button>
           <div className="-mr-2 flex md:hidden">
             <button
               type="button"
@@ -47,6 +52,9 @@ const Navbar: React.FC = () => {
           <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
           <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
         </div>
+        <Button>
+            <Link href="/quote">Get a Quote</Link>
+          </Button>
       </div>
     </nav>
   );
