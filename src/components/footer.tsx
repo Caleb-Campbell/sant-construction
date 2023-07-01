@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -11,24 +12,24 @@ const Footer: React.FC = () => {
           <div className="w-full md:w-1/3 text-center mb-4 md:mb-0">
             <ul className="flex justify-center md:justify-center">
               <li className="mr-4">
-                <a href="/home" className="text-white hover:text-gray-400">
+                <Link href="/home" className="text-white hover:text-gray-400">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="mr-4">
-                <a href="/about" className="text-white hover:text-gray-400">
+                <Link href="/about" className="text-white hover:text-gray-400">
                   About
-                </a>
+                </Link>
               </li>
               <li className="mr-4">
-                <a href="/services" className="text-white hover:text-gray-400">
+                <Link href="/services" className="text-white hover:text-gray-400">
                   Services
-                </a>
+                </Link>
               </li>
               <li className="mr-4">
-                <a href="/contact" className="text-white hover:text-gray-400">
+                <Link href="/contact" className="text-white hover:text-gray-400">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
