@@ -1,11 +1,12 @@
-import Navbar from "~/components/navbars"
+import Footer from "~/components/footer";
+import Navbar from "~/components/navbars";
 
-
-export const Layout = ({children}:{children: React.ReactNode}) => {
-    return (
-        <div>
-            <Navbar />
-            {children}
-        </div>
-    )
-}
+export const Layout = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <div className="min-h-screen">
+      <Navbar />
+      {children}
+      <Footer />
+    </div>
+  );
+};

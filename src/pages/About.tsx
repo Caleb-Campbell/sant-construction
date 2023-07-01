@@ -1,9 +1,13 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Footer from '~/components/footer';
+import Navbar from '~/components/navbars';
+import { Layout } from '~/layouts';
 
 const About: React.FC = () => {
   return (
+    <Layout>
     <div className="bg-gray-100 py-10">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl text-center font-bold mb-8">About Us</h1>
@@ -76,6 +80,7 @@ const About: React.FC = () => {
         </div>
       </div>
     </div>
+    </Layout>
   );
 };
 
