@@ -11,22 +11,22 @@ const Footer: React.FC = () => {
           <div className="w-full md:w-1/3 text-center mb-4 md:mb-0">
             <ul className="flex justify-center md:justify-center">
               <li className="mr-4">
-                <a href="#" className="text-white hover:text-gray-400">
+                <a href="/home" className="text-white hover:text-gray-400">
                   Home
                 </a>
               </li>
               <li className="mr-4">
-                <a href="#" className="text-white hover:text-gray-400">
+                <a href="/about" className="text-white hover:text-gray-400">
                   About
                 </a>
               </li>
               <li className="mr-4">
-                <a href="#" className="text-white hover:text-gray-400">
+                <a href="/services" className="text-white hover:text-gray-400">
                   Services
                 </a>
               </li>
               <li className="mr-4">
-                <a href="#" className="text-white hover:text-gray-400">
+                <a href="/contact" className="text-white hover:text-gray-400">
                   Contact
                 </a>
               </li>
