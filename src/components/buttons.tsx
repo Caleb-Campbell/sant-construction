@@ -6,7 +6,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant;
 };
 
-const Button: React.FC<ButtonProps> = ({ variant = 'primary', ...rest }) => {
+const Button: React.FC<ButtonProps> = ({ variant = 'primary', className, ...rest }) => {
   let variantClasses = '';
   switch (variant) {
     case 'outline':
@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({ variant = 'primary', ...rest }) => {
       variantClasses = 'bg-red-500 text-white hover:bg-red-600';
       break;
     case 'primary':
-      variantClasses = 'bg-blue-500 text-white hover:bg-blue-600';
+      variantClasses = 'bg-sant-yellow-100 text-white hover:bg-sant-yellow-200';
       break;
     case 'secondary':
       variantClasses = 'bg-gray-500 text-white hover:bg-gray-600';
@@ -27,7 +27,7 @@ const Button: React.FC<ButtonProps> = ({ variant = 'primary', ...rest }) => {
 
   return (
     <button
-      className={`px-4 py-2 rounded-sm transition-all focus:outline-none ${variantClasses}`}
+      className={`px-4 py-2 rounded-sm transition-all focus:outline-none ${variantClasses} ${className || ''} `}
       {...rest}
     />
   );
