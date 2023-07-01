@@ -57,7 +57,7 @@ export default function Quote() {
                             </div>
                             <h2 className="text-3xl font-bold tracking-tight text-gray-900">Get a Free Quote</h2>
                             <p className="mt-6 text-lg leading-8 text-gray-600">
-                                Get a custom construction quote. Fill out our form with project details. Our team will review and respond via email. Let's start your construction project together!
+                                {`Get a custom construction quote. Fill out our form with project details. Our team will review and respond via email. Let's start your construction project together!`}
                             </p>
                             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
                                 <div className="flex gap-x-4">

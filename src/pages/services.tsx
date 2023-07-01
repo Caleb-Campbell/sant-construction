@@ -1,77 +1,84 @@
-import { useState, useEffect } from 'react';
-import { Layout } from '~/layouts';
+import { useState } from "react";
+import { Layout } from "~/layouts"
 
-interface Service {
-    title: string;
-    description: string;
-    image: string;
-}
 
-interface Props {
-    services: Service[];
-}
+const Services = () => {
 
-const App = () => {
-    const [services, setServices] = useState<Service[]>([]);
+    const [selectedService, setSelectedService] = useState<number | null>(null);
 
-    useEffect(() => {
-        // Fetch or set services data
-        const fetchedServices = [
-            {
-                title: 'Service 1',
-                description: 'Description of Service 1',
-                image: '/path/to/service1.jpg',
-            },
-            {
-                title: 'Service 2',
-                description: 'Description of Service 2',
-                image: '/path/to/service2.jpg',
-            },
-            // Add more services as needed
-        ];
 
-        setServices(fetchedServices);
-    }, []);
+    const services = [
+        {
+            title: 'Residential Construction',
+            description: 'We specialize in building custom homes and providing renovations and additions to existing residential properties.',
+        },
+        {
+            title: 'Commercial Construction',
+            description: 'Our commercial construction services include new builds, remodeling, and tenant improvements.',
+        },
+        {
+            title: 'Renovations',
+            description: 'Whether you want to update your kitchen, bathroom, or entire home, we provide high-quality renovation services.',
+        },
+        {
+            title: 'Exterior Remodeling',
+            description: 'Enhance the curb appeal and functionality of your property with our exterior remodeling services.',
+        },
+        {
+            title: 'Custom Carpentry',
+            description: 'Our skilled carpenters can create custom woodworking pieces, such as cabinets, built-in shelves, and furniture.',
+        },
+        {
+            title: 'Project Management',
+            description: 'Our project management services ensure that your construction project stays on track, within budget, and meets your expectations.',
+        },
+    ];
+
+    const handleServiceClick = (index: number) => {
+        setSelectedService(index); // Update the selected service
+    };
 
     return (
         <Layout>
-            <Services services={services} />
-        </Layout>
-    );
-};
+            <div className="container mx-auto py-8">
+                <h1 className="text-4xl font-bold mb-8">Our Services</h1>
 
-export default App;
-
-
-
-
-
-
-
-
-const Services: React.FC<Props> = ({ services }) => {
-    return (
-        <section className="bg-gray-100 py-16">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                            <img src={service.image} alt={service.title} className="w-full h-48 object-cover" />
-                            <div className="p-6">
-                                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                                <p className="text-gray-600">{service.description}</p>
-                                <div className="mt-4">
-                                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                                        Learn More
-                                    </button>
-                                </div>
-                            </div>
+                        <div
+                            key={index}
+                            className={`bg-white rounded-lg shadow-lg p-6 cursor-pointer ${selectedService === index ? "bg-gray-100" : ""
+                                }`}
+                            onClick={() => handleServiceClick(index)}
+                        >
+                            <img
+                                src={`https://picsum.photos/id/${index * 13}/900/700`}
+                                alt={service.title}
+                                className="w-full h-40 object-cover mb-4 rounded-lg"
+                            />
+                            <h2 className="text-xl font-semibold mb-4">{service.title}</h2>
+                            <p className="text-gray-600">{service.description}</p>
                         </div>
                     ))}
                 </div>
+
+                {selectedService !== null && (
+                    <div className="mt-8 md:flex">
+                        <div className="bg-white rounded-lg shadow-lg p-6 md:w-2/3">
+                            <h2 className="text-2xl font-semibold mb-4">
+                                {services[selectedService]?.title}
+                            </h2>
+                            <p className="text-gray-600">
+                                {services[selectedService]?.description}
+                            </p>
+                            {/* Additional information or components for the selected service */}
+                        </div>
+                        <div className="hidden md:block md:w-1/3" />
+                    </div>
+                )}
             </div>
-        </section>
-    );
-};
+        </Layout>
+    )
+}
+
+export default Services
