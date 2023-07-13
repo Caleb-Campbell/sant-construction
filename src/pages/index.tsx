@@ -28,7 +28,7 @@ const HomePage: React.FC = () => {
                   We provide top-quality construction services for residential
                   and commercial projects. Contact us for a free consultation!
                 </p>
-                <Button className="rounded-lg px-6 py-3 text-white hover:sant-yellow-100">
+                <Button className="hover:sant-yellow-100 rounded-lg px-6 py-3 text-white">
                   Get Started
                 </Button>
               </div>
@@ -47,11 +47,12 @@ const HomePage: React.FC = () => {
               <div className="flex justify-center space-x-12">
                 <div>
                   <Image
-                    src="/service1.jpg"
+                    src="/images/IMG_3097.jpg"
                     alt="Service 1"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={400}
                   />
+
                   <h3 className="mt-4 text-xl font-bold">
                     Residential Construction
                   </h3>
@@ -62,10 +63,10 @@ const HomePage: React.FC = () => {
                 </div>
                 <div>
                   <Image
-                    src="/service2.jpg"
+                    src="/images/IMG_0300.jpeg"
                     alt="Service 2"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={400}
                   />
                   <h3 className="mt-4 text-xl font-bold">
                     Commercial Construction
@@ -77,10 +78,10 @@ const HomePage: React.FC = () => {
                 </div>
                 <div>
                   <Image
-                    src="/service3.jpg"
+                    src="/images/IMG_3097.jpg"
                     alt="Service 3"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={400}
                   />
                   <h3 className="mt-4 text-xl font-bold">
                     Renovation & Remodeling
@@ -104,10 +105,10 @@ const HomePage: React.FC = () => {
               <div className="flex justify-center space-x-12">
                 <div>
                   <Image
-                    src="/project1.jpg"
+                    src="/images/IMG_3097.jpg"
                     alt="Project 1"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={400}
                   />
                   <h3 className="mt-4 text-xl font-bold">Residential Home</h3>
                   <p className="text-lg">
@@ -116,10 +117,10 @@ const HomePage: React.FC = () => {
                 </div>
                 <div>
                   <Image
-                    src="/project2.jpg"
+                    src="/images/IMG_3097.jpg"
                     alt="Project 2"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={400}
                   />
                   <h3 className="mt-4 text-xl font-bold">
                     Commercial Building
@@ -131,10 +132,10 @@ const HomePage: React.FC = () => {
                 </div>
                 <div>
                   <Image
-                    src="/project3.jpg"
+                    src="/images/IMG_3097.jpg"
                     alt="Project 3"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={400}
                   />
                   <h3 className="mt-4 text-xl font-bold">Home Renovation</h3>
                   <p className="text-lg">
@@ -156,11 +157,11 @@ const HomePage: React.FC = () => {
               <div className="flex justify-center space-x-12">
                 <div>
                   <Image
-                    src="/avatar1.jpg"
+                    src="/images/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg"
                     alt="Client 1"
                     width={80}
                     height={80}
-                    className="rounded-full"
+                    className="rounded-full mb-2"
                   />
                   <p className="text-lg">
                     "The team at Construction Company did an excellent job on
@@ -172,11 +173,11 @@ const HomePage: React.FC = () => {
                 </div>
                 <div>
                   <Image
-                    src="/avatar2.jpg"
+                    src="/images/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg"
                     alt="Client 2"
                     width={80}
                     height={80}
-                    className="rounded-full"
+                    className="rounded-full mb-2"
                   />
                   <p className="text-lg">
                     "We hired Construction Company for our office construction,
