@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import React from "react";
 import Button from "~/components/buttons";
@@ -29,7 +30,9 @@ const HomePage: React.FC = () => {
                   and commercial projects. Contact us for a free consultation!
                 </p>
                 <Button className="hover:sant-yellow-100 rounded-lg px-6 py-3 text-white">
+                  <a href="/contact">
                   Get Started
+                  </a>
                 </Button>
               </div>
             </div>
@@ -44,8 +47,8 @@ const HomePage: React.FC = () => {
                 We offer a wide range of construction services to meet your
                 needs.
               </p>
-              <div className="flex justify-center space-x-12">
-                <div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center">
+                <div className="mx-auto px-1">
                   <Image
                     src="/images/IMG_3097.jpg"
                     alt="Service 1"
@@ -61,7 +64,7 @@ const HomePage: React.FC = () => {
                     families.
                   </p>
                 </div>
-                <div>
+                <div className="mx-auto px-1">
                   <Image
                     src="/images/IMG_0300.jpeg"
                     alt="Service 2"
@@ -76,7 +79,7 @@ const HomePage: React.FC = () => {
                     and offices.
                   </p>
                 </div>
-                <div>
+                <div className="mx-auto px-1">
                   <Image
                     src="/images/IMG_1572.jpg"
                     alt="Service 3"
@@ -102,8 +105,8 @@ const HomePage: React.FC = () => {
                 Take p look at some of the projects we have completed for our
                 clients.
               </p>
-              <div className="flex justify-center space-x-12">
-                <div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center">
+                <div className="mx-auto px-1">
                   <Image
                     src="/images/IMG_3961.jpg"
                     alt="Project 1"
@@ -115,7 +118,7 @@ const HomePage: React.FC = () => {
                     A beautiful and modern residential home built to perfection.
                   </p>
                 </div>
-                <div>
+                <div className="mx-auto px-1" >
                   <Image
                     src="/images/IMG_0405.jpg"
                     alt="Project 2"
@@ -130,7 +133,7 @@ const HomePage: React.FC = () => {
                     businesses.
                   </p>
                 </div>
-                <div>
+                <div className="mx-auto px-1">
                   <Image
                     src="/images/IMG_3485.jpg"
                     alt="Project 3"
@@ -161,7 +164,7 @@ const HomePage: React.FC = () => {
                     alt="Client 1"
                     width={80}
                     height={80}
-                    className="rounded-full mb-2"
+                    className="rounded-full mb-2 mx-auto"
                   />
                   <p className="text-lg">
                     "The team at Construction Company did an excellent job on
@@ -177,7 +180,7 @@ const HomePage: React.FC = () => {
                     alt="Client 2"
                     width={80}
                     height={80}
-                    className="rounded-full mb-2"
+                    className="rounded-full mb-2 mx-auto"
                   />
                   <p className="text-lg">
                     "We hired Construction Company for our office construction,
@@ -230,12 +233,11 @@ const HomePage: React.FC = () => {
                     required
                   ></textarea>
                 </div>
-                <button
+                <Button
                   type="submit"
-                  className="rounded-lg bg-blue-500 px-6 py-3 text-white hover:bg-blue-600"
                 >
                   Send Message
-                </button>
+                </Button>
               </form>
             </div>
           </section>
