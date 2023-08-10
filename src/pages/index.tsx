@@ -30,9 +30,9 @@ const HomePage: React.FC = () => {
                   and commercial projects. Contact us for a free consultation!
                 </p>
                 <Button className="hover:sant-yellow-100 rounded-lg px-6 py-3 text-white">
-                  <a href="/contact">
+                  <Link href="/contact">
                   Get Started
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>
