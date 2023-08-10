@@ -6,9 +6,11 @@ import { Layout } from "~/layouts";
 const About: React.FC = () => {
   return (
     <Layout>
-      <div className="bg-gray-100 py-10 h-screen">
+      <div className="h-screen bg-gray-100 py-10">
         <div className="container mx-auto px-4">
-          <h1 className="mb-8 text-center text-4xl font-bold">About Us</h1>
+          <h1 className="mb-8 text-center text-4xl font-bold">
+            About Us
+          </h1>
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2 md:pr-8">
               <Carousel
@@ -20,21 +22,21 @@ const About: React.FC = () => {
               >
                 <div>
                   <img
-                    src="https://via.placeholder.com/800x400"
+                    src="/images/IMG_4430.jpg"
                     alt="Construction 1"
                     className="rounded-lg"
                   />
                 </div>
                 <div>
                   <img
-                    src="https://via.placeholder.com/800x400"
+                    src="/images/IMG_2123.jpg"
                     alt="Construction 2"
                     className="rounded-lg"
                   />
                 </div>
                 <div>
                   <img
-                    src="https://via.placeholder.com/800x400"
+                    src="/images/IMG_5348.jpg"
                     alt="Construction 3"
                     className="rounded-lg"
                   />
@@ -71,7 +73,7 @@ const About: React.FC = () => {
               <div className="flex flex-wrap">
                 <div className="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4">
                   <img
-                    src="https://via.placeholder.com/400x400"
+                    src="/images/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg"
                     alt="Team Member 1"
                     className="mb-2 rounded-lg"
                   />
@@ -80,7 +82,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4">
                   <img
-                    src="https://via.placeholder.com/400x400"
+                    src="/images/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg"
                     alt="Team Member 2"
                     className="mb-2 rounded-lg"
                   />
@@ -89,7 +91,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4">
                   <img
-                    src="https://via.placeholder.com/400x400"
+                    src="/images/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg"
                     alt="Team Member 3"
                     className="mb-2 rounded-lg"
                   />
@@ -98,7 +100,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4">
                   <img
-                    src="https://via.placeholder.com/400x400"
+                    src="/images/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg"
                     alt="Team Member 4"
                     className="mb-2 rounded-lg"
                   />

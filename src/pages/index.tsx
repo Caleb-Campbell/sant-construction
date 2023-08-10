@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
             <div className="text-center">
               <h2 className="mb-4 text-3xl font-bold">Our Services</h2>
               <p className="mb-8 text-lg">
-                We offer p wide range of construction services to meet your
+                We offer a wide range of construction services to meet your
                 needs.
               </p>
               <div className="flex justify-center space-x-12">
@@ -78,7 +78,7 @@ const HomePage: React.FC = () => {
                 </div>
                 <div>
                   <Image
-                    src="/images/IMG_3097.jpg"
+                    src="/images/IMG_1572.jpg"
                     alt="Service 3"
                     width={600}
                     height={400}
@@ -105,7 +105,7 @@ const HomePage: React.FC = () => {
               <div className="flex justify-center space-x-12">
                 <div>
                   <Image
-                    src="/images/IMG_3097.jpg"
+                    src="/images/IMG_3961.jpg"
                     alt="Project 1"
                     width={600}
                     height={400}
@@ -117,7 +117,7 @@ const HomePage: React.FC = () => {
                 </div>
                 <div>
                   <Image
-                    src="/images/IMG_3097.jpg"
+                    src="/images/IMG_0405.jpg"
                     alt="Project 2"
                     width={600}
                     height={400}
@@ -132,7 +132,7 @@ const HomePage: React.FC = () => {
                 </div>
                 <div>
                   <Image
-                    src="/images/IMG_3097.jpg"
+                    src="/images/IMG_3485.jpg"
                     alt="Project 3"
                     width={600}
                     height={400}
@@ -240,15 +240,6 @@ const HomePage: React.FC = () => {
             </div>
           </section>
         </main>
-
-        <footer className="bg-gray-900 py-6">
-          <div className="container mx-auto">
-            <p className="text-center text-gray-300">
-              &copy; {new Date().getFullYear()} Construction Company. All rights
-              reserved.
-            </p>
-          </div>
-        </footer>
       </div>
     </Layout>
   );
