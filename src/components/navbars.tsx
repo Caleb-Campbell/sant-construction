@@ -21,7 +21,6 @@ const Navbar: React.FC = () => {
                   
                 />
               </div>
-              <div className="hidden md:block text-white text-xl font-bold"><h1>Sant Construction</h1></div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <Link href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</Link>
