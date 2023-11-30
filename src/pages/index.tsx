@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
         <main className="container mx-auto">
           <section id="services" className="py-16">
             <div className="text-center">
-              <h2 className="mb-4 text-3xl font-bold">Our Services</h2>
+              <h2 className="mb-4 text-3xl font-serif font-bold">Our Services</h2>
               <p className="mb-8 text-lg">
                 We offer a wide range of construction services to meet your
                 needs.
@@ -66,7 +66,7 @@ const HomePage: React.FC = () => {
                     height={400}
                   />
 
-                  <h3 className="mt-4 text-xl font-bold">
+                  <h3 className="mt-4 text-xl font-serif font-bold">
                     Residential Construction
                   </h3>
                   <p className="text-lg">
@@ -81,7 +81,7 @@ const HomePage: React.FC = () => {
                     width={600}
                     height={400}
                   />
-                  <h3 className="mt-4 text-xl font-bold">
+                  <h3 className="mt-4 text-xl font-serif font-bold">
                     Commercial Construction
                   </h3>
                   <p className="text-lg">
@@ -96,7 +96,7 @@ const HomePage: React.FC = () => {
                     width={600}
                     height={400}
                   />
-                  <h3 className="mt-4 text-xl font-bold">
+                  <h3 className="mt-4 text-xl font-serif font-bold">
                     Renovation & Remodeling
                   </h3>
                   <p className="text-lg">
@@ -110,9 +110,9 @@ const HomePage: React.FC = () => {
 
           <section id="projects" className="py-16">
             <div className="text-center">
-              <h2 className="mb-4 text-3xl font-bold">Our Projects</h2>
+              <h2 className="mb-4 text-3xl font-serif font-bold">Our Projects</h2>
               <p className="mb-8 text-lg">
-                Take p look at some of the projects we have completed for our
+                Take <a href=""></a> look at some of the projects we have completed for our
                 clients.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center">
@@ -123,7 +123,7 @@ const HomePage: React.FC = () => {
                     width={600}
                     height={400}
                   />
-                  <h3 className="mt-4 text-xl font-bold">Residential Home</h3>
+                  <h3 className="mt-4 text-xl font-serif font-bold">Residential Home</h3>
                   <p className="text-lg">
                     A beautiful and modern residential home built to perfection.
                   </p>
@@ -135,7 +135,7 @@ const HomePage: React.FC = () => {
                     width={600}
                     height={400}
                   />
-                  <h3 className="mt-4 text-xl font-bold">
+                  <h3 className="mt-4 font-serif text-xl font-bold">
                     Commercial Building
                   </h3>
                   <p className="text-lg">
@@ -150,7 +150,7 @@ const HomePage: React.FC = () => {
                     width={600}
                     height={400}
                   />
-                  <h3 className="mt-4 text-xl font-bold">Home Renovation</h3>
+                  <h3 className="mt-4 text-xl font-serif font-bold">Home Renovation</h3>
                   <p className="text-lg">
                     A complete home renovation that transformed the living
                     space.
@@ -162,7 +162,7 @@ const HomePage: React.FC = () => {
 
           <section id="testimonials" className="py-16">
             <div className="text-center">
-              <h2 className="mb-4 text-3xl font-bold">Testimonials</h2>
+              <h2 className="mb-4 text-3xl font-serif font-bold">Testimonials</h2>
               <p className="mb-8 text-lg">
                 See what our clients have to say about our construction
                 services.
@@ -181,7 +181,7 @@ const HomePage: React.FC = () => {
                     our home construction. The attention to detail and quality
                     of work exceeded our expectations."
                   </p>
-                  <h4 className="text-xl font-bold">John Doe</h4>
+                  <h4 className="text-xl font-serif font-bold">John Doe</h4>
                   <p className="text-lg">Homeowner</p>
                 </div>
                 <div>
@@ -197,7 +197,7 @@ const HomePage: React.FC = () => {
                     and they delivered outstanding results within the given
                     timeframe. Highly recommended!"
                   </p>
-                  <h4 className="text-xl font-bold">Jane Smith</h4>
+                  <h4 className="text-xl font-serif font-bold">Jane Smith</h4>
                   <p className="text-lg">Business Owner</p>
                 </div>
               </div>
