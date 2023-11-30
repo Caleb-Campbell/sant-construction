@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Link from 'next/link';
 import React, { useState } from 'react';
-import Button from './buttons';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,19 +14,18 @@ const Navbar: React.FC = () => {
       <nav className="bg-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
-            <div className="flex items-center justify-between w-full">
-              <div className="flex-shrink-0 ">
-                <img className="h-14 w-14" src="/images/logo.svg" alt="Workflow logo" 
-                />
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <img className="h-14 w-14" src="/images/logo.svg" alt="Workflow logo" />
               </div>
-              <div className="hidden md:block text-white text-xl font-bold"><h1>Sant Construction</h1></div>
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
-                  <Link href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</Link>
-                  <Link href="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</Link>
-                  <Link href="/services" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</Link>
-                  <Link href="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
-                </div>
+              <div className="md:hidden text-white text-xl font-bold"><h1>Sant Construction</h1></div>
+            </div>
+            <div className="hidden md:flex items-center flex-grow justify-end">
+              <div className="ml-10 flex items-baseline space-x-4">
+                <Link href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</Link>
+                <Link href="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</Link>
+                <Link href="/services" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</Link>
+                <Link href="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
