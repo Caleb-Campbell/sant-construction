@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "~/components/buttons";
 import Footer from "~/components/footer";
 import Navbar from "~/components/navbars";
 import { Layout } from "~/layouts";
@@ -53,12 +54,10 @@ const Contact: React.FC = () => {
                 ></textarea>
               </div>
               <div className="flex items-center justify-center">
-                <button
-                  className="focus:shadow-outline rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none"
-                  type="button"
+                <Button
                 >
                   Send Message
-                </button>
+                </Button>
               </div>
             </form>
           </div>
