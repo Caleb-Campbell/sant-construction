@@ -17,7 +17,6 @@ const Navbar: React.FC = () => {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <img className="h-14 w-14" src="/images/logo.svg" alt="Workflow logo" 
-                  
                 />
               </div>
               <div className="hidden md:block">

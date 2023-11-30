@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "typeface-lora";
 import React from "react";
 import Button from "~/components/buttons";
 import { Layout } from "~/layouts";
@@ -21,13 +22,22 @@ const HomePage: React.FC = () => {
           <section className="bg-gray-900 py-16">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center">
-                <h1 className="mb-4 text-4xl font-bold text-white">
-                  Sant Construction and Development
+                <h1 className="text-7xl font-bold italic text-white">
+                  <span className="text-sant-yellow-100">S</span>ANT
                 </h1>
-                <p className="mb-8 text-lg text-white">
+                <img
+                  className="mx-auto h-40 w-40"
+                  src="/images/logo.svg"
+                  alt="Workflow logo"
+                />
+                <h2 className="mb-10 font-serif text-4xl text-white">
+                  <span className="text-gray-400">CONSTRUCTION</span> <br />{" "}
+                  <span className="-mt-2 text-2xl">& DEVELOPMENT</span>
+                </h2>
+                {/* <p className="mb-8 text-lg text-white">
                   We provide top-quality construction services for residential
                   and commercial projects. Contact us for a free consultation!
-                </p>
+                </p> */}
                 <Button className="hover:sant-yellow-100 rounded-lg px-6 py-3 text-white">
                   Get Started
                 </Button>
@@ -161,7 +171,7 @@ const HomePage: React.FC = () => {
                     alt="Client 1"
                     width={80}
                     height={80}
-                    className="rounded-full mb-2"
+                    className="mb-2 rounded-full"
                   />
                   <p className="text-lg">
                     "The team at Construction Company did an excellent job on
@@ -177,7 +187,7 @@ const HomePage: React.FC = () => {
                     alt="Client 2"
                     width={80}
                     height={80}
-                    className="rounded-full mb-2"
+                    className="mb-2 rounded-full"
                   />
                   <p className="text-lg">
                     "We hired Construction Company for our office construction,
