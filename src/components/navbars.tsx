@@ -16,16 +16,18 @@ const Navbar: React.FC = () => {
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img className="h-14 w-14" src="/images/logo.svg" alt="Workflow logo" />
+                <Link href='/'>
+                <img className="h-14 w-14" src="/images/logo.svg" alt="Workflow logo"/>
+                </Link>
               </div>
               <div className="md:hidden text-white text-xl font-bold"><h1>Sant Construction</h1></div>
             </div>
             <div className="hidden md:flex items-center flex-grow justify-end">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</Link>
-                <Link href="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</Link>
-                <Link href="/services" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</Link>
-                <Link href="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
+                <Link href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium font-serif">Home</Link>
+                <Link href="/services" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium font-serif">Services</Link>
+                <Link href="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium font-serif">About</Link>
+                <Link href="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium font-serif">Contact</Link>
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
@@ -67,8 +69,8 @@ const Navbar: React.FC = () => {
         <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
           <div className="px-2 pt-2 pb-3 sm:px-3">
             <a href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-            <a href="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
             <a href="/services" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+            <a href="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
             <a href="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
           </div>
         </div>
