@@ -1,11 +1,8 @@
 import { useState } from "react";
-import { Layout } from "~/layouts"
-
+import { Layout } from "~/layouts";
 
 const Services = () => {
-
     const [selectedService, setSelectedService] = useState<number | null>(null);
-
 
     const services = [
         {
@@ -35,20 +32,21 @@ const Services = () => {
     ];
 
     const handleServiceClick = (index: number) => {
-        setSelectedService(index); // Update the selected service
+        setSelectedService(index); 
     };
 
     return (
         <Layout>
             <div className="container mx-auto py-8">
-                <h1 className="text-4xl font-bold mb-8">Our Services</h1>
+                <h1 className="text-4xl font-bold mb-8 font-serif">Our Services</h1>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className={`bg-white rounded-lg shadow-lg p-6 cursor-pointer ${selectedService === index ? "bg-gray-100" : ""
-                                }`}
+                            className={`bg-white rounded-lg shadow-lg p-6 cursor-pointer transition-colors duration-300 ease-in-out ${
+                                selectedService === index ? "bg-gray-100" : "hover:bg-gray-100"
+                            }`}
                             onClick={() => handleServiceClick(index)}
                         >
                             <img
@@ -56,7 +54,7 @@ const Services = () => {
                                 alt={service.title}
                                 className="w-full h-40 object-cover mb-4 rounded-lg"
                             />
-                            <h2 className="text-xl font-semibold mb-4">{service.title}</h2>
+                            <h2 className="text-xl font-semibold mb-4 font-serif">{service.title}</h2>
                             <p className="text-gray-600">{service.description}</p>
                         </div>
                     ))}
@@ -65,20 +63,19 @@ const Services = () => {
                 {selectedService !== null && (
                     <div className="mt-8 md:flex">
                         <div className="bg-white rounded-lg shadow-lg p-6 md:w-2/3">
-                            <h2 className="text-2xl font-semibold mb-4">
+                            <h2 className="text-xl font-semibold mb-4 font-serif">
                                 {services[selectedService]?.title}
                             </h2>
                             <p className="text-gray-600">
                                 {services[selectedService]?.description}
                             </p>
-                            {/* Additional information or components for the selected service */}
                         </div>
-                        <div className="hidden md:block md:w-1/3" />
+                        <div className="md:w-1/3" />
                     </div>
                 )}
             </div>
         </Layout>
-    )
-}
+    );
+};
 
-export default Services
+export default Services;

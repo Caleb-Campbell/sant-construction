@@ -22,6 +22,7 @@
     "react-responsive-carousel": "^3.2.23",
     "resend": "^0.16.0",
     "superjson": "1.12.2",
+    "typeface-lora": "^1.1.13",
     "zod": "^3.21.4"
   },
   "devDependencies": {

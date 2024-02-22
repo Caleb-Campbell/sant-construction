@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
+import "typeface-lora";
 import React from "react";
 import Button from "~/components/buttons";
 import { Layout } from "~/layouts";
@@ -11,7 +12,7 @@ const HomePage: React.FC = () => {
     <Layout>
       <div className="w-full">
         <Head>
-          <title>Construction Company | Home</title>
+          <title>Sant Construction & Development LLC</title>
           <meta
             name="description"
             content="Welcome to our construction company website. We provide top-quality construction services for residential and commercial projects. Contact us for p free consultation!"
@@ -19,20 +20,32 @@ const HomePage: React.FC = () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <header className="bg-gray-800">
-          <section className="bg-gray-900 py-16">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <section className="relative bg-gray-900 py-16">
+            <div className="absolute inset-0 z-0">
+              <Image
+                src="/images/boukaih-bGMyTnSlYvE-unsplash.jpg"
+                alt="Background Image"
+                layout="fill"
+                objectFit="cover"
+                style={{ filter: "blur(4px)", opacity: 0.7 }}
+              />
+            </div>
+            <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center">
-                <h1 className="mb-4 text-4xl font-bold text-white">
-                  Sant Construction and Development
+                <h1 className="text-7xl font-bold italic text-white">
+                  <span className="text-sant-yellow-100">S</span>ANT
                 </h1>
-                <p className="mb-8 text-lg text-white">
-                  We provide top-quality construction services for residential
-                  and commercial projects. Contact us for a free consultation!
-                </p>
-                <Button className="hover:sant-yellow-100 rounded-lg px-6 py-3 text-white">
-                  <Link href="/contact">
-                  Get Started
-                  </Link>
+                <img
+                  className="mx-auto h-40 w-40"
+                  src="/images/logo.svg"
+                  alt="Workflow logo"
+                />
+                <h2 className="mb-10 font-serif text-4xl text-white">
+                  <span className="text-gray-400">CONSTRUCTION</span> <br />{" "}
+                  <span className="-mt-2 text-2xl">& DEVELOPMENT</span>
+                </h2>
+                <Button className="hover:sant-yellow-100 rounded-lg px-6 py-3 font-semibold text-gray-200">
+                  <Link href="/contact">Get Started</Link>
                 </Button>
               </div>
             </div>
@@ -42,28 +55,14 @@ const HomePage: React.FC = () => {
         <main className="container mx-auto">
           <section id="services" className="py-16">
             <div className="text-center">
-              <h2 className="mb-4 text-3xl font-bold">Our Services</h2>
+              <h2 className="mb-4 font-serif text-3xl font-bold">
+                Our Services
+              </h2>
               <p className="mb-8 text-lg">
                 We offer a wide range of construction services to meet your
                 needs.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center">
-                <div className="mx-auto px-1">
-                  <Image
-                    src="/images/IMG_3097.jpg"
-                    alt="Service 1"
-                    width={600}
-                    height={400}
-                  />
-
-                  <h3 className="mt-4 text-xl font-bold">
-                    Residential Construction
-                  </h3>
-                  <p className="text-lg">
-                    We specialize in building beautiful and functional homes for
-                    families.
-                  </p>
-                </div>
+              <div className="grid grid-cols-1 justify-center gap-10 md:grid-cols-3">
                 <div className="mx-auto px-1">
                   <Image
                     src="/images/IMG_0300.jpeg"
@@ -71,7 +70,7 @@ const HomePage: React.FC = () => {
                     width={600}
                     height={400}
                   />
-                  <h3 className="mt-4 text-xl font-bold">
+                  <h3 className="mt-4 font-serif text-xl font-bold">
                     Commercial Construction
                   </h3>
                   <p className="text-lg">
@@ -81,12 +80,28 @@ const HomePage: React.FC = () => {
                 </div>
                 <div className="mx-auto px-1">
                   <Image
+                    src="/images/IMG_3097.jpg"
+                    alt="Service 1"
+                    width={600}
+                    height={400}
+                  />
+
+                  <h3 className="mt-4 font-serif text-xl font-bold">
+                    Residential Construction
+                  </h3>
+                  <p className="text-lg">
+                    We specialize in building beautiful and functional homes for
+                    families.
+                  </p>
+                </div>
+                <div className="mx-auto px-1">
+                  <Image
                     src="/images/IMG_1572.jpg"
                     alt="Service 3"
                     width={600}
                     height={400}
                   />
-                  <h3 className="mt-4 text-xl font-bold">
+                  <h3 className="mt-4 font-serif text-xl font-bold">
                     Renovation & Remodeling
                   </h3>
                   <p className="text-lg">
@@ -100,32 +115,22 @@ const HomePage: React.FC = () => {
 
           <section id="projects" className="py-16">
             <div className="text-center">
-              <h2 className="mb-4 text-3xl font-bold">Our Projects</h2>
+              <h2 className="mb-4 font-serif text-3xl font-bold">
+                Our Projects
+              </h2>
               <p className="mb-8 text-lg">
-                Take p look at some of the projects we have completed for our
-                clients.
+                Take <a href=""></a> look at some of the projects we have
+                completed for our clients.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center">
+              <div className="grid grid-cols-1 justify-center gap-10 md:grid-cols-3">
                 <div className="mx-auto px-1">
-                  <Image
-                    src="/images/IMG_3961.jpg"
-                    alt="Project 1"
-                    width={600}
-                    height={400}
-                  />
-                  <h3 className="mt-4 text-xl font-bold">Residential Home</h3>
-                  <p className="text-lg">
-                    A beautiful and modern residential home built to perfection.
-                  </p>
-                </div>
-                <div className="mx-auto px-1" >
                   <Image
                     src="/images/IMG_0405.jpg"
                     alt="Project 2"
                     width={600}
                     height={400}
                   />
-                  <h3 className="mt-4 text-xl font-bold">
+                  <h3 className="mt-4 font-serif text-xl font-bold">
                     Commercial Building
                   </h3>
                   <p className="text-lg">
@@ -135,12 +140,28 @@ const HomePage: React.FC = () => {
                 </div>
                 <div className="mx-auto px-1">
                   <Image
+                    src="/images/IMG_3961.jpg"
+                    alt="Project 1"
+                    width={600}
+                    height={400}
+                  />
+                  <h3 className="mt-4 font-serif text-xl font-bold">
+                    Residential Home
+                  </h3>
+                  <p className="text-lg">
+                    A beautiful and modern residential home built to perfection.
+                  </p>
+                </div>
+                <div className="mx-auto px-1">
+                  <Image
                     src="/images/IMG_3485.jpg"
                     alt="Project 3"
                     width={600}
                     height={400}
                   />
-                  <h3 className="mt-4 text-xl font-bold">Home Renovation</h3>
+                  <h3 className="mt-4 font-serif text-xl font-bold">
+                    Home Renovation
+                  </h3>
                   <p className="text-lg">
                     A complete home renovation that transformed the living
                     space.
@@ -152,7 +173,9 @@ const HomePage: React.FC = () => {
 
           <section id="testimonials" className="py-16">
             <div className="text-center">
-              <h2 className="mb-4 text-3xl font-bold">Testimonials</h2>
+              <h2 className="mb-4 font-serif text-3xl font-bold">
+                Testimonials
+              </h2>
               <p className="mb-8 text-lg">
                 See what our clients have to say about our construction
                 services.
@@ -164,14 +187,14 @@ const HomePage: React.FC = () => {
                     alt="Client 1"
                     width={80}
                     height={80}
-                    className="rounded-full mb-2 mx-auto"
+                    className="mb-2 rounded-full"
                   />
                   <p className="text-lg">
                     "The team at Construction Company did an excellent job on
                     our home construction. The attention to detail and quality
                     of work exceeded our expectations."
                   </p>
-                  <h4 className="text-xl font-bold">John Doe</h4>
+                  <h4 className="font-serif text-xl font-bold my-1">John Doe</h4>
                   <p className="text-lg">Homeowner</p>
                 </div>
                 <div>
@@ -180,65 +203,26 @@ const HomePage: React.FC = () => {
                     alt="Client 2"
                     width={80}
                     height={80}
-                    className="rounded-full mb-2 mx-auto"
+                    className="mb-2 rounded-full"
                   />
                   <p className="text-lg">
                     "We hired Construction Company for our office construction,
                     and they delivered outstanding results within the given
                     timeframe. Highly recommended!"
                   </p>
-                  <h4 className="text-xl font-bold">Jane Smith</h4>
+                  <h4 className="font-serif text-xl font-bold my-1">Jane Smith</h4>
                   <p className="text-lg">Business Owner</p>
                 </div>
               </div>
             </div>
           </section>
 
-          <section id="contact" className="py-16">
+          <section id="contact" className="mt-6 mb-20">
             <div className="text-center">
-              <h2 className="mb-4 text-3xl font-bold">Contact Us</h2>
-              <p className="mb-8 text-lg">
-                Get in touch with our team to discuss your construction project.
-              </p>
-              <form className="mx-auto max-w-md">
-                <div className="mb-6">
-                  <label htmlFor="name" className="mb-2 block font-bold">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full rounded-lg border border-gray-300 px-4 py-2"
-                    required
-                  />
-                </div>
-                <div className="mb-6">
-                  <label htmlFor="email" className="mb-2 block font-bold">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full rounded-lg border border-gray-300 px-4 py-2"
-                    required
-                  />
-                </div>
-                <div className="mb-6">
-                  <label htmlFor="message" className="mb-2 block font-bold">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    className="w-full rounded-lg border border-gray-300 px-4 py-2"
-                    required
-                  ></textarea>
-                </div>
-                <Button
-                  type="submit"
-                >
-                  Send Message
-                </Button>
-              </form>
+              <h2 className="mb-8 text-3xl font-bold font-serif">Contact Us</h2>
+              <Button className="hover:sant-yellow-100 rounded-lg px-6 py-3 font-semibold text-gray-200">
+                <Link href="/contact">Get Started</Link>
+              </Button>
             </div>
           </section>
         </main>
