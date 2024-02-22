@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
           <title>Sant Construction & Development LLC</title>
           <meta
             name="description"
-            content="Welcome to our construction company website. We provide top-quality construction services for residential and commercial projects. Contact us for p free consultation!"
+            content="Welcome to Sant Construction & Development. We provide top-quality construction services for commercial and residential projects. Contact us for a free consultation!"
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
