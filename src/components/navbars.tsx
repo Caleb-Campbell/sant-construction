@@ -20,6 +20,7 @@ const Navbar: React.FC = () => {
                 <img className="h-14 w-14" src="/images/logo.svg" alt="Workflow logo"/>
                 </Link>
               </div>
+
               <div className="md:hidden text-white text-xl font-bold"><h1>Sant Construction</h1></div>
             </div>
             <div className="hidden md:flex items-center flex-grow justify-end">
@@ -28,6 +29,7 @@ const Navbar: React.FC = () => {
                 <Link href="/services" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium font-serif">Services</Link>
                 <Link href="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium font-serif">About</Link>
                 <Link href="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium font-serif">Contact</Link>
+
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
